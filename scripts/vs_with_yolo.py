@@ -540,51 +540,5 @@ class OffbPosCtl:
             self.loc = []
             self.waypointIndex = 0
 
-
-# from wfov_camera_msgs.msg import WFOVImage
-# import rospy
-# from std_msgs.msg import String
-# from darknet_ros_msgs.msg import BoundingBox, BoundingBoxes
-# from sensor_msgs.msg import Image, CameraInfo
-# from image_geometry import PinholeCameraModel
-#
-# cam = PinholeCameraModel()
-# pub = rospy.Publisher('/camera/image_calib', Image, queue_size=10)
-# b = False
-#
-#
-# def callback(data):
-#     pub.publish(data.image)
-#
-#
-# def callback1(data):
-#     global b
-#     if not b:
-#         cam.fromCameraInfo(data)
-#         b = True
-#
-# def callback2(data):
-#     for i in data.bounding_boxes:
-#         if i.Class == "toilet" or  i.Class == "mouse":
-#             print cam.projectPixelTo3dRay((i.xmin + (i.xmax - i.xmin)/2, i.ymin + (i.ymax - i.ymin)/2))
-#
-#
-#
-# def listener():
-#     rospy.init_node('listener', anonymous=True)
-#     rospy.Subscriber("/camera/image", WFOVImage, callback)
-#     rospy.Subscriber("/camera/camera_info", CameraInfo, callback1)
-#     rospy.Subscriber("/darknet_ros/bounding_boxes", BoundingBoxes, callback2)
-#
-#     # spin() simply keeps python from exiting until this node is stopped
-#     rospy.spin()
-#
-# if __name__ == '__main__':
-#     listener()
-
-
-
-
-
 if __name__ == "__main__":
     OffbPosCtl()

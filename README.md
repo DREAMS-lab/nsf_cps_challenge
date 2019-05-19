@@ -99,5 +99,4 @@ Video:
 
 https://vimeo.com/337138301
 
-This is a research code, expect that it changes often and any fitness for a particular purpose is disclaimed.
 
